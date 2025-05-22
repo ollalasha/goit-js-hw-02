@@ -5,7 +5,7 @@ const checkSale = "sale";
 const normCaseMessage = message.toLowerCase();
 
 
-if (message.includes(checkSpam) || message.includes(checkSale)){
+if (normCaseMessage.includes(checkSpam) || normCaseMessage.includes(checkSale)){
     return true;
 } else {
     return false;
